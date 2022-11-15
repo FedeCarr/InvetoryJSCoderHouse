@@ -1,0 +1,11 @@
+[
+  { "item": "Apples", "price": 2 },
+  { "item": "Bananas", "price": 3 },
+  { "item": "Zucchini", "price": 4 },
+  { "item": "Aubergine", "price": 5 },
+  { "item": "Pine Apple", "price": 6 },
+  { "item": "Kiwi", "price": 7 },
+  { "item": "Orange", "price": 8 },
+  { "item": "Lettuce", "price": 9 },
+  { "item": "Cucumber", "price": 10 }
+]

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Check</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/validations.js"></script>
+    <script defer src="js/class.itemInv.js"></script>
+    <script defer src="js/dom.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- HEADER -->
+      <nav>
+        <span class="hello">Hi Associate!</span>
+        <h1 class="project">Inventory Check</h1>
+        <p class="date" id="dateNow"></p>
+      </nav>
+    </header>
+    <main>
+      <!-- CARD -->
+      <div class="data__card">
+        <h2 class="data__title">Insert the product data</h2>
+        <form class="form" id="inv-form">
+          <div class="div__container">
+            <select class="form__input" id="product-input">
+              <option selected disabled>...</option>
+            </select>
+          </div>
+          <div class="div__container">
+            <input
+              type="number"
+              class="form__input"
+              id="total-input"
+              value="0"
+              min="0"
+            />
+            <label class="form__label">Total</label>
+          </div>
+          <div class="div__container">
+            <input
+              type="number"
+              class="form__input"
+              id="loses-input"
+              value="0"
+              min="0"
+            />
+            <label class="form__label">Loses</label>
+          </div>
+          <div class="div__container">
+            <input
+              type="date"
+              name="myDate"
+              min="2022-01-01"
+              class="form__input"
+              id="arriv-input"
+            />
+            <label class="form__label">Arriving date</label>
+          </div>
+          <button type="submit" class="form__btn" id="btn-form">&rarr;</button>
+        </form>
+      </div>
+      <!-- APP -->
+      <div class="app">
+        <div class="inventory__title">
+          <ul class="inventory__row">
+            <li class="inventory__value">ARRIVING DATE</li>
+            <li class="inventory__value">PRODUCT</li>
+            <li class="inventory__value">UNITS</li>
+            <li class="inventory__value">AMOUNT[€]</li>
+          </ul>
+        </div>
+      </div>
+      <!-- MOVEMENTS -->
+      <div class="app">
+        <div class="inventory" id="invetory-list"></div>
+      </div>
+    </main>
+  </body>
+</html>

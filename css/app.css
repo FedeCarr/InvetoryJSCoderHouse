@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.project {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.data__card {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.data__title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 222;
+  color: #333;
+}
+
+.div__container {
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 0.5fr;
+  grid-template-rows: 1fr auto;
+  gap: 0.4rem 1rem;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form__label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 40%;
+}
+
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* APP */
+.app {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* INVENTORY */
+.inventory {
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.inventory__title {
+  background-image: linear-gradient(to top left, #fff, #999);
+  border-radius: 1rem;
+}
+
+.inventory__row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+.inventory__type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+.inventory__date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.inventory__value {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-left: auto;
+}
